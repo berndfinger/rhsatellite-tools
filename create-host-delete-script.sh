@@ -2,6 +2,11 @@
 # get-hosts-to-delete.sh:
 #   Create a script for deleting hosts which have not checked in for more than 6 weeks
 #
+# Note: The script requires a file /var/log/hammer/delete-hosts/whitelist.txt which contains
+#       names of hosts which never must be deleted. The file can be empty.
+#       You may want to use directory /var/log/hammer/delete-hosts for storing any delete scripts
+#       which have been run so far.
+#
 # Author: Bernd Finger, Red Hat
 # Wed Aug 11 10:10:00 CEST 2021
 #
